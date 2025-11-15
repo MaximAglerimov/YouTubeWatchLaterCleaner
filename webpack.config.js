@@ -1,7 +1,17 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/console-script.ts",
+  entry: "./src/main.ts",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    // This makes the main function available globally
+    library: {
+      name: "WatchLaterCleaner",
+      type: "var",
+      export: "default",
+    },
+  },
   mode: "production",
   module: {
     rules: [
@@ -14,15 +24,5 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
-  },
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
-    // This makes the main function available globally
-    library: {
-      name: "WatchLaterCleaner",
-      type: "var",
-      export: "default",
-    },
   },
 };
