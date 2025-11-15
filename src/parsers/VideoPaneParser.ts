@@ -1,4 +1,4 @@
-import { DomVideoPane, IVideoPane } from "../models/VideoPane";
+import { DomVideoPane, IVideoPane } from "models";
 
 export interface IVideoPaneParser {
   parseFromDocument(): IVideoPane[];

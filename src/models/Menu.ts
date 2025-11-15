@@ -1,4 +1,4 @@
-import { DomButton, IButton } from "./Button";
+import { DomButton, IButton } from "models";
 
 export interface IMenu {
   element: Element;

@@ -1,5 +1,5 @@
-import { delayMs } from "../helpers/delay";
-import { DomMenu, IMenu } from "./Menu";
+import { delayMs } from "helpers";
+import { DomMenu, IMenu } from "models";
 
 export interface IVideoPane {
   element: Element;

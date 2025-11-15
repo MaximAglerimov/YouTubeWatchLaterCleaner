@@ -1,5 +1,5 @@
-import { delayMs } from "./helpers/delay";
-import { VideoPaneParser } from "./parsers/VideoPaneParser";
+import { delayMs } from "helpers";
+import { VideoPaneParser } from "parsers";
 
 export async function main() {
   console.log("Starting cleanup...");
