@@ -1,28 +1,21 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/main.ts",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-    // This makes the main function available globally
-    library: {
-      name: "WatchLaterCleaner",
-      type: "var",
-      export: "default",
-    },
-  },
-  mode: "production",
+  entry: "./src/index.ts",
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
         use: "ts-loader",
-        exclude: /node_modules/,
+        exclude: "/node_modules/",
       },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".ts"],
   },
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+  },
+  mode: "production",
 };
