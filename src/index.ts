@@ -17,7 +17,7 @@ export async function main() {
       const deleteButton = menu?.getDeleteButton();
       deleteButton?.click();
 
-      await delayMs(1200);
+      await delayMs(400);
     }
   } catch (error) {
     console.error("Error in main:", error);
