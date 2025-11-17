@@ -13,5 +13,8 @@
     "typescript": "^5.9.3",
     "webpack": "^5.102.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "tsconfig-paths-webpack-plugin": "^4.2.0"
   }
 }

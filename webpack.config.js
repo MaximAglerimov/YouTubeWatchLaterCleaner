@@ -1,4 +1,5 @@
 const path = require("path");
+const TsConfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -12,11 +13,12 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts"],
+    plugins: [new TsConfigPathsPlugin({ configFile: "./tsconfig.json" })],
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
   mode: "production",
-  devtool: 'inline-source-map'
+  devtool: "inline-source-map",
 };
