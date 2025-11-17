@@ -21,5 +21,4 @@ module.exports = {
     clean: true,
   },
   mode: "production",
-  devtool: "inline-source-map",
-};
+  };

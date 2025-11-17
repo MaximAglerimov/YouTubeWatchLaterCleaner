@@ -13,7 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": false,
     "allowUnreachableCode": false,
-    "sourceMap": true,
+    "sourceMap": false,
     "paths": {
       "helpers": ["./src/helpers/index.ts"],
       "models": ["./src/models/index.ts"],
