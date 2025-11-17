@@ -19,6 +19,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
     clean: true,
+    library: {
+      name: "CleanWatchLater",
+      type: "var",
+      export: "main",
+    },
   },
   mode: "production",
-  };
+};
